@@ -13,7 +13,7 @@ def test_add_to_cart_button(browser):
          browser.get(link)
          browser.find_element(By.CSS_SELECTOR, "button.btn-add-to-basket")
          present = True 
-         time.sleep(3)
+         time.sleep(30)
     except NoSuchElementException:
          present = False
     assert present == True, 'No add-to-basket element!'
